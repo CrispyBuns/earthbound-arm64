@@ -37,6 +37,7 @@ class DumpDoc(BaseModel):
     compressedTextStrings: list[str] = Field(default_factory=list)
     defaultDumpPath: str = "bin"
     romIdentifier: str = ""
+    romMd5s: list[str] = Field(default_factory=list)
     dontUseTextTable: bool = False
     multibyteFlyovers: bool = False
     music: Music = Field(default_factory=Music)
