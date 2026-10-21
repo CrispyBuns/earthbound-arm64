@@ -48,7 +48,7 @@ cp path/to/your/earthbound.sfc earthbound.sfc
 make unix
 ```
 
-That's it! `make unix` automatically sets up the Python environment, extracts game assets from your ROM, and compiles the game. When it finishes, run:
+That's it! `make unix` automatically sets up the Python environment, extracts game assets from your ROM, and compiles the game. The standard US ROM is identified by its SNES header; the exact ROM with MD5 `16a8d3d7eea1312324fe8212a48453d3` is also explicitly accepted by `earthbound.yml`. This hash allowlist only relaxes ROM identification—it does not make unrelated ROM revisions or modified data layouts compatible. When it finishes, run:
 
 ```bash
 ./port/unix/build/earthbound
