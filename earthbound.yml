@@ -22073,6 +22073,8 @@ compressedTextStrings:
 - spi
 defaultDumpPath: asm/bin/
 romIdentifier: 'EARTH BOUND          '
+romMd5s:
+- 16a8d3d7eea1312324fe8212a48453d3
 dontUseTextTable: false
 multibyteFlyovers: false
 d: false
