@@ -113,7 +113,7 @@ def extract(
         print("File too small to be an Earthbound ROM.", file=sys.stderr)
         sys.exit(2)
 
-    detected = detect(rom, doc.romIdentifier)
+    detected = detect(rom, doc.romIdentifier, doc.romMd5s)
     if not detected.matched:
         print("Non-matching ROM detected.", file=sys.stderr)
         sys.exit(3)
